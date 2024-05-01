@@ -1,8 +1,8 @@
 public class MainCan {
 
-    public static string main(String[] args) {
+    public static void main(String[] args) {
        
-        MiCancion miCancion = new MiCancion();
+        Cancion miCancion = new Cancion();
         miCancion.crearCancion();
         System.out.println(miCancion.toString());
         

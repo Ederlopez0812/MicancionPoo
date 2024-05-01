@@ -9,13 +9,13 @@ import java.util.Scanner;
 
 public class Cancion {
     
-     String titulo;
-     String autor;
+     private String titulo;
+     private String autor;
 
     public Cancion() {
     }
 
-    public Cancion(int titulo, int autor) {
+    public Cancion(String titulo, String autor) {
         this.titulo = titulo;
         this.autor = autor;
     }
@@ -28,16 +28,16 @@ public class Cancion {
         return autor;
     }
 
-    public void setTitulo(doucble titulo) {
+    public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
 
-    public void setAutor(double autor) {
+    public void setAutor(String autor) {
         this.autor = autor;
     }
 
     @Override
-    public Strings toString() {
+    public String toString() {
         return "Cancion " + "titulo=" + titulo + ", autor=" + autor;
     }
 
@@ -48,9 +48,9 @@ public class Cancion {
         Scanner leer=new Scanner(System.in);
         
         System.out.println("Ingrese el titulo de la cancion");
-        titulo=ler.nextDouble();
+        titulo=leer.nextLine();
         System.out.println("Ingrese el autor");
-        autor=ler.nextInt();
+        autor=leer.next();
        
         
     }
